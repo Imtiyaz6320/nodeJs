@@ -1,0 +1,23 @@
+13.Please explain if using promises is better than using callbacks.
+
+14.Could you explain what I/O means?
+
+15.Name the main types of applications developers make with Node.js.
+
+16.Do developers use Node.js for front-end or back-end development?
+
+17.Please tell us what NPM means and explain its main functionalities.
+
+18.Do you understand what modules are in Node.js? Please explain what 	they do.
+
+19.Is Node.js better than Java? Explain your answer.
+
+20.Are there any differences between Node.js and Angular? Please give       	examples.
+
+21.Could you name one database that developers frequently use with    	Node.js?
+
+22.Could you name some libraries that developers frequently use with 	Node.js?
+
+23.Please name some disadvantages of Node.js.
+
+24.How do developers import external libraries to Node.js? Name the     	command they use.

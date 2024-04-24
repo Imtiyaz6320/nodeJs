@@ -1,0 +1,24 @@
+1.Please explain what Node.js is and how you can use it.
+
+2.Please tell us about your Node.js experience.
+
+3.Explain why you chose to apply for this vacancy.
+
+4.How many years of experience do you have with Node.js?
+
+5.What do you know about RESTful APIs?
+
+6.Why are soft skills important when using Node.js?
+
+7.Could you name three advantages of Node.js?
+
+8.Do you have a qualification that supports your application for this 	Node.js role?
+
+9.Can you explain how Node.js works?
+
+10.Is Node.js single-threaded? Can you explain why or why not?
+
+11.How does Node.js handle concurrency despite being single-threaded?
+
+12.What is the callback function in Node.js?
+
