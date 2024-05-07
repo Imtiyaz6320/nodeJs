@@ -3,7 +3,7 @@ let b=0;
 
 setTimeout(()=>{
    b=30;
-},2000)
+},200)
 
 
 console.log(a+b)
