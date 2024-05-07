@@ -13,3 +13,13 @@ const main=async ()=>{
 }
 
 main()
+
+
+/*"dependencies": {
+    "chalk": "^4.1.2",
+    "colors": "^1.4.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mongodb": "^4.1.2",
+    "simple-node-logger": "^21.8.12"
+  }*/

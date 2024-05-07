@@ -1,0 +1,24 @@
+Create DataBase 
+Curd Opration 
+
+show databases
+
+use dbname
+ insetData 
+db.products.insertOne({ mobile: 't6az', brand: 'motorola', price: '120', color: 'black' });
+
+
+ui sied
+ "mobile": "okay",
+  "brand": "haway",
+  "price" :"45678",
+  "colour": "pink"
+
+
+update Data 
+db.products.updateOne({ brand: "haway" }, { $set: { price: "0000" } });
+
+delet data 
+db.products.deleteOne({"brand": "haway"})
+
+db.products.find()
