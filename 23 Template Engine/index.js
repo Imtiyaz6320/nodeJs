@@ -48,3 +48,14 @@ app.get('*', (_, res) =>{
 app.listen(7878);
 
 
+
+
+
+
+// {
+//     "dependencies": {
+//       "ejs": "^3.1.9",
+//       "express": "^4.18.2"
+//     }
+//   }
+  
