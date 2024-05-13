@@ -1,19 +1,21 @@
-const dbConnect= require('./mongodb');
+const dbConnect = require("./mongodb");
 
-dbConnect().then((resp)=>{
-resp.find({name:'nord'}).toArray().then((data)=>{
-console.log(data)
-})
-})
+dbConnect().then((resp) => {
+  resp
+    .find({ name: "nord" })
+    .toArray()
+    .then((data) => {
+      console.log(data);
+    });
+});
 
-const main=async ()=>{
-   let data = await dbConnect();
-   data = await data.find({}).toArray();
-   console.log(data)
-}
+const main = async () => {
+  let data = await dbConnect();
+  data = await data.find({}).toArray();
+  console.log(data);
+};
 
-main()
-
+main();
 
 /*"dependencies": {
     "chalk": "^4.1.2",
