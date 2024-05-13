@@ -1,8 +1,8 @@
-const dbConnection = require('./mongodb')
+const dbConnection = require("./mongodb");
 
-// Read in mongodb 
+// Read in mongodb
 // using promises
-// console.log(dbConnection()); 
+// console.log(dbConnection());
 // dbConnection().then((res)=>{
 //     // console.log(res.find());
 //     // console.log(res.find().toArray());
@@ -13,16 +13,15 @@ const dbConnection = require('./mongodb')
 
 // using async
 
-
 const main = async () => {
-    let data = await dbConnection()
-    data = await data.find().toArray();
-    console.log(data);
-}
+  let data = await dbConnection();
+  data = await data.find().toArray();
+  // console.log(data);
+};
 
-main()
+main();
 
-
+// ----------------------------------------------------------------------------------------------------------------
 /*{
   "dependencies": {
     "ejs": "^3.1.9",
@@ -30,4 +29,13 @@ main()
     "mongodb": "^6.4.0"
   }
 }
+*/
+
+/*
+old vireson 
+
+"dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.6.10"
+  }
 */
