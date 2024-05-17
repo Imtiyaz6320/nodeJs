@@ -2,26 +2,70 @@ https://www.testgorilla.com/blog/nodejs-interview-questions/?utm_term=&hsa_grp=&
 
 
 1.Please explain what Node.js is and how you can use it.
+Node.js is a runtime environment that allows you to run JavaScript on the server side, outside of a web browser. 
+It's built on Chrome's V8 JavaScript engine and enables the development of scalable network applications.
+You can use Node.js to:
+1. Create web servers and APIs.
+2. Build real-time applications like chat apps.
+3. Manage files on the server.
+4. Interact with databases.
+5. Automate repetitive tasks.
+Its non-blocking, event-driven architecture makes it efficient for I/O-heavy tasks, such as handling multiple requests simultaneously.
 
 2.Please tell us about your Node.js experience.
+I have extensive experience with Node.js, including developing server-side applications, building RESTful APIs, 
+and working with Express.js for routing and middleware. I've also used Node.js for real-time applications with WebSockets and
+ have a good understanding of asynchronous programming, event-driven architecture, and working with various databases like 
+ MongoDB and MySQL.
 
 3.Explain why you chose to apply for this vacancy.
+I chose to apply for this vacancy because it aligns perfectly with my skills in Node.js development, 
+offers an exciting opportunity to work on innovative projects, and is at a reputable company where 
+I can grow and contribute meaningfully.
 
 4.How many years of experience do you have with Node.js?
+"I have 2 years of experience with Node.js."
 
 5.What do you know about RESTful APIs?
+RESTful APIs are designed around the principles of Representational State Transfer (REST).
+ They use standard HTTP methods like GET, POST, PUT, and DELETE to interact with resources, 
+ typically represented in formats like JSON or XML. RESTful APIs are stateless, meaning each 
+ request from client to server must contain all the information needed to understand the request,
+  and session state is held on the client.
+ They are widely used for web services due to their simplicity, scalability, and performance.
 
 6.Why are soft skills important when using Node.js?
+Soft skills are crucial when using Node.js because they improve collaboration, communication, and 
+problem-solving, leading to more efficient and successful project outcomes.
 
 7.Could you name three advantages of Node.js?
+1. **High Performance**: Node.js uses the V8 engine, enabling fast execution of code.
+2. **Scalability**: Its non-blocking, event-driven architecture handles numerous concurrent connections efficiently.
+3. **Large Ecosystem**: The extensive npm library offers numerous modules and tools, accelerating development.
 
-8.Do you have a qualification that supports your application for this 	Node.js role?
+8.Do you have a qualification that supports your application for this Node.js role?
 
 9.Can you explain how Node.js works?
+Sure! Node.js is a runtime environment that allows you to run JavaScript on the server side.
+ It's built on the Chrome V8 JavaScript engine which compiles JavaScript into native machine code for faster execution.
+ Node.js uses an event-driven, non-blocking I/O model, making it efficient and suitable for data-intensive real-time 
+ applications that run across distributed devices. It handles multiple operations concurrently via events and callbacks,
+ instead of using traditional threads or separate system processes. This makes Node.js particularly good for building
+ web applications that require a lot of I/O operations, 
+ like APIs and real-time services.
 
 10.Is Node.js single-threaded? Can you explain why or why not?
+Yes, Node.js is primarily single-threaded. It uses a single main thread to handle all asynchronous I/O operations with a 
+non-blocking event loop. However,
+ for operations that require complex calculations or blocking I/O, Node.js can use additional threads through 
+ the Worker Threads module, allowing some level of multi-threading capabilities. This design helps optimize throughput and 
+ scalability in I/O-bound applications.
 
 11.How does Node.js handle concurrency despite being single-threaded?
+Node.js handles concurrency through its event-driven, non-blocking I/O model. It uses an event loop to 
+manage multiple operations simultaneously without creating new threads, allowing it to efficiently handle 
+tasks like network requests and file operations without waiting for each one to complete before moving on to the next. 
+This enables Node.js to perform well in real-time, high-concurrency applications.
 
 12.What is the callback function in Node.js?
-
+In Node.js, a callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action. This is especially useful for handling asynchronous operations, allowing Node.js to perform non-blocking tasks such as reading files or querying a database.
