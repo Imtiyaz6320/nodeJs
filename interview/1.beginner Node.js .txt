@@ -39,9 +39,9 @@ Soft skills are crucial when using Node.js because they improve collaboration, c
 problem-solving, leading to more efficient and successful project outcomes.
 
 7.Could you name three advantages of Node.js?
-1. **High Performance**: Node.js uses the V8 engine, enabling fast execution of code.
-2. **Scalability**: Its non-blocking, event-driven architecture handles numerous concurrent connections efficiently.
-3. **Large Ecosystem**: The extensive npm library offers numerous modules and tools, accelerating development.
+1. High Performance: Node.js uses the V8 engine, enabling fast execution of code.
+2. Scalability: Its non-blocking, event-driven architecture handles numerous concurrent connections efficiently.
+3. Large Ecosystem: The extensive npm library offers numerous modules and tools, accelerating development.
 
 8.Do you have a qualification that supports your application for this Node.js role?
 
