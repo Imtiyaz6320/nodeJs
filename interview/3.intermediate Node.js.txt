@@ -1,0 +1,131 @@
+1.What do you understand about event-driven programming?
+   46 Events and Event Emitter index.js
+   html main koi btn click karta hai toh ek single jata hai koi work kata hai 
+   nodejs main btn nahi hota hai isliya api k throu kaam kart hai issko EventEmitter
+   
+Event-driven programming in Node.js is a programming paradigm in which the flow of the program is determined by events—actions or occurrences recognized by the software. Here are the key points:
+1. Event Loop: Node.js uses an event loop to manage asynchronous operations. The event loop continuously checks for pending events and processes callbacks associated with those events, allowing non-blocking I/O operations.
+2. Event Emitters: Node.js provides the `EventEmitter` class, which is used to handle events. Objects of this class can emit named events that cause functions (event handlers) to be called.
+3. Asynchronous Nature: This model is inherently asynchronous, meaning that the program can continue executing other code while waiting for an event to occur. This helps in handling I/O operations efficiently without blocking the main execution thread.
+4. Scalability: Event-driven architecture makes Node.js highly scalable, especially for I/O-heavy tasks such as web servers, real-time applications, and APIs.
+
+2.Do you know what event loops are in Node.js?
+Yes, the event loop in Node.js is a core mechanism that handles asynchronous operations. 
+It continuously checks for and processes pending events, allowing Node.js to perform non-blocking I/O operations. 
+This enables efficient execution of code, handling of callbacks, 
+and management of tasks without blocking the main thread.
+
+{{{----Nots :In Node.js, both `process.nextTick()` and `setImmediate()` are tools used to control the timing of script execution, but they serve
+While both `process.nextTick()` and `setImmediate()` are used to schedule tasks asynchronously, 
+`nextTick()` fires before the next event loop phase and even before any other I/O events, 
+making it suitable for quick tasks that should be processed after the current operation completes but before any new events are processed. 
+On the other hand, `setImmediate()`
+is designed for tasks that can wait until after the current event loop turn, after all current I/O events
+-----}}}
+
+3.Please explain what nextTick() does in Node.js.
+ Prioritization: Callbacks passed to `process.nextTick()` are always executed before any other I/O operations.
+
+ Recursion Caution: Using `process.nextTick()` recursively can lead to I/O operations being delayed indefinitely because `nextTick()` 
+ callbacks fire before any I/O. This can potentially create a situation where the event loop is monopolized by `nextTick()` callbacks.
+ 
+ console.log('Start');
+process.nextTick(() => {
+  console.log('Next Tick');
+});
+console.log('Scheduled');
+
+// Output will be: Start, Scheduled, Next Tick
+
+4.Please explain what setImmediate() does in Node.js.
+setImmediate()` is another function used to break up long-running operations and run callbacks after the poll phase of the event loop has 
+completed but before timers and I/O events. It's somewhat similar to `setTimeout(fn, 0)`, but it's more efficient and specifically 
+designed to execute after the I/O events' callbacks.
+Key points:
+- Execution Phase: `setImmediate()` callbacks are executed after I/O events and before `setTimeout` and `setInterval`.
+- Usage: It is especially useful in scenarios where you want to allow the event loop to continue running, or when you want to schedule 
+immediate work after all I/O events but with a lower priority than `nextTick()`.
+console.log('Start');
+setImmediate(() => {
+  console.log('Immediate');
+});
+console.log('Scheduled');
+// Output will be: Start, Scheduled, Immediate
+
+
+5.Do you understand what EventEmitter is in Node.js?
+Yes, EventEmitter is a class in Node.js that allows objects to handle and emit named events. 
+It provides methods like on() to register event handlers and emit() to trigger events, 
+enabling an event-driven architecture.
+
+6.How many API functions exist in Node.js? Could you name two?
+Node.js has a vast number of API functions spread across various modules, such as file system operations, network handling, streams,
+ and utilities. It isn't practical to give a total count as it depends on how you categorize them, but here are two examples of 
+ commonly used API functions
+1. `fs.readFile()`: Asynchronously reads the entire contents of a file. It is part of the File System module.
+2. `http.createServer()`: Sets up an HTTP server that listens for network requests. It is part of the HTTP module.
+
+7.What do you understand about the package.json file?
+The `package.json` file in Node.js is a central repository for the configurations of a Node.js project. This file includes:
+- Metadata: Information about the project such as name, version, and description.
+- Dependencies: Lists all NPM packages the project requires to run.
+- DevDependencies: Lists the packages needed for development but not for production.
+- Scripts: Shortcuts that can be run from the command line to perform tasks like starting the server, running tests, etc
+
+8.What is your method for using URL modules in Node.js?
+the URL module in Node.js provides utilities for URL resolution and parsing. Here’s how you can use it:
+const url = require('url');
+const myUrl = new URL('http://example.com/path?query=123');
+console.log(myUrl.hostname); // Outputs 'example.com'
+console.log(myUrl.pathname); // Outputs '/path'
+console.log(myUrl.searchParams.get('query')); // Outputs '123'
+
+
+9.Do you understand what the Express.js package is? Can you give us a definition?
+Express.js is a web application framework for Node.js, designed for building web applications and APIs. 
+It is minimalist, flexible, and features a robust set of features for web and mobile applications. 
+Express simplifies the server creation process that is otherwise manual in Node.js.
+
+10.Please explain how you would make a basic Express.js application.
+npm install express
+Create an app.js file
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
+http://localhost:3000/, it will display "Hello World!".
+
+11.Please explain what Node.js streams are.
+Node.js streams are objects that let you read data from a source or write data to a destination in a continuous fashion. 
+In Node.js, streams are used to handle reading/writing files, communication with external resources, or any other kind of continuous data 
+flow. They are especially useful for managing large amounts of data efficiently 
+because they don't require the entire data to be loaded into memory at once, thus making them very memory efficient.
+
+12.How many types of streams exist in Node.js?
+There are four main types of streams in Node.js:
+
+Readable: Streams from which data can be read (e.g., reading from a file).
+Writable: Streams to which data can be written (e.g., writing to a file).
+Duplex: Streams that are both Readable and Writable (e.g., a TCP socket).
+Transform: A type of Duplex stream where the output is computed from the input (e.g., a zlib compression stream).
+
+13.Which Node.js skill do you need to improve? Explain how you would get better.
+Practical Implementation
+Reading Documentation
+Online Courses and Tutorials
+
+14.Please tell us how you would update and delete dependencies.
+Updating Dependencies
+Update a Specific Package: Run npm update <package-name> to update a specific package to the latest version that matches the version rules in your package.json.
+Update All Packages: Run npm update to update all your packages to their latest versions that still match the version rules in your package.json.
+
+Deleting Dependencies
+Remove a Package: Run npm uninstall <package-name>. This command removes the package from node_modules and also removes its entry from package.json and package-lock.json.
+Clean Unused Packages: If there are packages in node_modules that aren’t listed in your package.json, you can use npm prune to remove these extraneous packages.

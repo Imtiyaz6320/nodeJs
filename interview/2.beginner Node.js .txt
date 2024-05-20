@@ -57,7 +57,8 @@ meaning it can perform other tasks while waiting for these operations to complet
 Developers use Node.js primarily for back-end development.
 
 17.Please tell us what NPM means and explain its main functionalities.
-NPM stands for Node Package Manager. It's a tool used primarily with JavaScript, particularly for Node.js applications. NPM manages packages (bits of reusable code) that help developers easily share and update code across projects.
+NPM stands for Node Package Manager. It's a tool used primarily with JavaScript, particularly for Node.js applications. 
+NPM manages packages (bits of reusable code) that help developers easily share and update code across projects.
 1. Package Installation: third-party packages from the npm registry.
 2. Dependency Management: Automatically manages all the dependencies
 3. Publish Packages: Enables users to publish their own packages to the npm registry, 
@@ -75,15 +76,18 @@ This structure also helps in avoiding namespace pollution and provides encapsula
 The choice between Node.js and Java depends on specific project needs and developer preferences:
 
 1. Use Cases:
-   - Node.js: Excellent for real-time applications, web servers, and microservices where handling many concurrent connections efficiently is crucial. It’s favored for full-stack JavaScript development.
-   - Java: Better suited for large-scale, enterprise-level applications, such as banking systems, where robustness, maintainability, and performance are critical. Java’s strong typing helps manage complexity in large code bases.
+   - Node.js: Excellent for real-time applications, web servers, and microservices where handling many concurrent connections efficiently is 
+   crucial. It’s favored for full-stack JavaScript development.
+   - Java: Better suited for large-scale, enterprise-level applications, such as banking systems, where robustness, maintainability, 
+   and performance are critical. Java’s strong typing helps manage complexity in large code bases.
 
 2. Performance:
    - Node.js: Uses a non-blocking, event-driven architecture, making it very efficient for tasks that are I/O-heavy but not CPU-intensive.
    - Java: Generally better for CPU-intensive applications due to its optimized, high-performance JVM (Java Virtual Machine).
 
 3. Development Speed and Ecosystem:
-   - Node.js: Offers rapid development cycles and a vast number of libraries via npm, which can speed up development, especially for new, smaller, or scale-out projects.
+   - Node.js: Offers rapid development cycles and a vast number of libraries via npm, which can speed up development, especially for new, 
+   smaller, or scale-out projects.
    - Java: Has a mature ecosystem with extensive libraries and frameworks, ideal for developing highly stable and scalable applications.
 
 20 Are there any differences between Node.js and Angular? Please give examples.
@@ -91,7 +95,8 @@ Yes, Node.js and Angular are fundamentally different tools used for web developm
 
 1. Node.js: 
    - Type: It is a runtime environment for executing JavaScript code on the server side.
-   - Use Case: It's primarily used for building backend services like APIs (Application Programming Interfaces) that power client applications (web or mobile).
+   - Use Case: It's primarily used for building backend services like APIs (Application Programming Interfaces) 
+   that power client applications (web or mobile).
    - Example: Creating a web server that handles HTTP requests and responses.
 
 2. Angular:
@@ -124,5 +129,6 @@ Certainly! Here are some disadvantages of Node.js:
 6. Asynchronous Programming Complexity: While non-blocking I/O can improve performance, the asynchronous nature of Node.js can complicate the logic and flow of applications, making them harder to understand and debug.
 
 24 How do developers import external libraries to Node.js? Name the command they use.
-Developers import external libraries to Node.js using the Node Package Manager (NPM). They can add libraries by using the command `npm install <library-name>`. For example, to install the Express library, they would use `npm install express`.
+Developers import external libraries to Node.js using the Node Package Manager (NPM). They can add libraries by using the command 
+`npm install <library-name>`. For example, to install the Express library, they would use `npm install express`.
 
