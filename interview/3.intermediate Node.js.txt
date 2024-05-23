@@ -3,10 +3,14 @@
    html main koi btn click karta hai toh ek single jata hai koi work kata hai 
    nodejs main btn nahi hota hai isliya api k throu kaam kart hai issko EventEmitter
    
-Event-driven programming in Node.js is a programming paradigm in which the flow of the program is determined by events—actions or occurrences recognized by the software. Here are the key points:
-1. Event Loop: Node.js uses an event loop to manage asynchronous operations. The event loop continuously checks for pending events and processes callbacks associated with those events, allowing non-blocking I/O operations.
-2. Event Emitters: Node.js provides the `EventEmitter` class, which is used to handle events. Objects of this class can emit named events that cause functions (event handlers) to be called.
-3. Asynchronous Nature: This model is inherently asynchronous, meaning that the program can continue executing other code while waiting for an event to occur. This helps in handling I/O operations efficiently without blocking the main execution thread.
+Event-driven programming in Node.js is a programming paradigm in which the flow of the program is determined by events—actions or occurrences recognized by the software.
+ Here are the key points:
+1. Event Loop: Node.js uses an event loop to manage asynchronous operations. The event loop continuously checks for pending events and 
+processes callbacks associated with those events, allowing non-blocking I/O operations.
+2. Event Emitters: Node.js provides the `EventEmitter` class, which is used to handle events. Objects of this class can emit named events 
+that cause functions (event handlers) to be called.
+3. Asynchronous Nature: This model is inherently asynchronous, meaning that the program can continue executing other code while waiting for an event to occur. 
+This helps in handling I/O operations efficiently without blocking the main execution thread.
 4. Scalability: Event-driven architecture makes Node.js highly scalable, especially for I/O-heavy tasks such as web servers, real-time applications, and APIs.
 
 2.Do you know what event loops are in Node.js?
